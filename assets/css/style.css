@@ -1149,6 +1149,89 @@ section {
   margin-left: 8px;
 }
 
+
+/*--------------------------------------------------------------
+# Founders
+--------------------------------------------------------------*/
+.founder .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.founder .member .pic {
+  overflow: hidden;
+}
+
+.founder .member .member-info {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #2f4d5a;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.founder .member:hover .member-info {
+  max-height: 300px;
+}
+
+.founder .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2f4d5a;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.founder .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b1cbd7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.founder .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.founder .member .social {
+  margin-top: 15px;
+}
+
+.founder .member .social a {
+  transition: color 0.3s;
+  color: #52869d;
+}
+
+.founder .member .social a:hover {
+  color: #67b0d1;
+}
+
+.founder .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .founder .member {
+    margin-bottom: 110px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
